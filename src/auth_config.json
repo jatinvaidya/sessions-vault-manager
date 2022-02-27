@@ -1,5 +1,5 @@
 {
-  "domain": "YOUR_DOMAIN",
-  "clientId": "YOUR_CLIENT_ID",
-  "audience": "YOUR_API_IDENTIFIER"
+	"domain": "jv-cs-sessions.au.auth0.com",
+	"clientId": "OmabTFGmBgAM33LR0CPb1WyQUBQAS4Ju",
+	"audience": "https://api01-for-vault-manager"
 }
