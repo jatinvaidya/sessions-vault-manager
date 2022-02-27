@@ -59,7 +59,9 @@ export const ExternalApiComponent = () => {
 		try {
 			const claims = await getIdTokenClaims();
 			console.info(`idToken claims: ${JSON.stringify(claims)}`);
-			params = { x_session_id: claims["https://example.com/x_session_id"] };
+			const params = {
+				x_session_id: claims["https://example.com/x_session_id"],
+			};
 			const token = await getAccessTokenSilently(params);
 			const response = await fetch(`${apiOrigin}/api/external`, {
 				headers: {
